@@ -74,7 +74,7 @@
         display: none;
       }
 
-      .topnav.responsive a:first-child{
+      .topnav.responsive a:first-child {
         margin-left: 0;
       }
 
@@ -89,6 +89,7 @@
       .topnav.responsive {
         position: fixed;
       }
+
       .topnav.responsive .icon {
         position: absolute;
         right: 0;
@@ -115,11 +116,11 @@
     window.onscroll = function () { scrollFunction() };
     function scrollFunction() {
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("myTopnav").style.boxShadow= "0px 4px 4px rgba(0, 0, 0, 0.6)";
+        document.getElementById("myTopnav").style.boxShadow = "0px 4px 4px rgba(0, 0, 0, 0.6)";
       }
       else {
         document.getElementById("myTopnav").style.boxShadow = "";
-      }   
+      }
     }
   </script>
   <div class="topnav" id="myTopnav">
@@ -137,9 +138,8 @@
   <!-- Hero Section -->
   <style>
     .real {
-      width: 90%;
+      width: 100%;
       margin: auto;
-      float: right;
     }
 
     .side-text {
@@ -177,7 +177,7 @@
       .side-photo {
         margin: auto;
         margin-top: 10%;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
         margin-left: 5%;
         margin-right: 5%;
         display: block;
@@ -239,7 +239,6 @@
     .container {
       position: static;
       width: 100%;
-      max-width: 5000px;
       margin: auto;
     }
 
@@ -280,10 +279,13 @@
       background-color: gray;
     }
 
+    .changes-text{display: none;}
+
     @media screen and (max-width: 767px) {
       .container {
-        margin-top: 450px;
-        margin-right: 0px;
+        position: relative;
+        margin: auto;
+        margin-top: 350px;
       }
 
       #thick {
@@ -292,17 +294,29 @@
         color: gray;
         background-color: gray;
       }
+
+      .changes {
+        display: none;
+      }
+
+      .changes-text {
+        display: block;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 40px;
+      }
     }
+
 
     .changes {
       width: 100%;
+      cursor: pointer;
     }
-
     .changes:hover {
       cursor: pointer;
     }
   </style>
-  <div class="container row">
+  <div class="container-fluid row">
     <div class="row" style="width: 100%;margin-bottom: 30px;">
       <h2 id="chooseyear">Choose your year</h2>
     </div>
@@ -324,7 +338,10 @@
       </button>
     </div>
     <hr id="thick" style="margin-top:10%;">
-    <img class="changes" src="Changes.png">on>
+    <img class="changes" src="Changes.png">
+    <div class="container-fluid row changes-text">
+      Make changes and contribute to this project. Help this grow!
+    </div>
   </div>
 
 </body>
