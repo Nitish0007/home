@@ -11,6 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="static/index.js"></script>
 </head>
 
 <body>
@@ -104,25 +105,7 @@
       }
     }
   </style>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    window.onscroll = function () { scrollFunction() };
-    function scrollFunction() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("myTopnav").style.boxShadow = "0px 4px 4px rgba(0, 0, 0, 0.6)";
-      }
-      else {
-        document.getElementById("myTopnav").style.boxShadow = "";
-      }
-    }
-  </script>
+
   <div class="topnav" id="myTopnav">
     <a href="#home" class="left">ENTITY</a>
     <a href="#news" class="left">MAIN</a>
