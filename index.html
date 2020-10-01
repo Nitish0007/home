@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -14,95 +15,6 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto';
-      font-size: 16px;
-      scroll-behavior: smooth;
-    }
-
-    .topnav {
-      position: fixed;
-      overflow: hidden;
-      background-color: white;
-      width: 100%;
-      height: fit-content;
-      z-index: 100000;
-      padding-bottom: 10px;
-      /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6); */
-    }
-
-    .topnav a {
-      margin-right: 60px;
-      margin-top: 15px;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    .topnav a:first-child {
-      margin-left: 10%;
-    }
-
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-
-    .topnav .icon {
-      display: none;
-    }
-
-    .left {
-      float: left;
-    }
-
-    .right {
-      float: right;
-    }
-
-
-
-    @media screen and (max-width: 1000px) {
-      .topnav a:not(:first-child) {
-        display: none;
-      }
-
-      .topnav.responsive a:first-child{
-        margin-left: 0;
-      }
-
-      .topnav a.icon {
-        margin-right: 10%;
-        float: right;
-        display: block;
-      }
-    }
-
-    @media screen and (max-width: 1000px) {
-      .topnav.responsive {
-        position: fixed;
-      }
-      .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-
-      .topnav.responsive a {
-        float: none;
-        display: block;
-        padding-left: 10%;
-        text-align: left;
-      }
-    }
-  </style>
   <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
@@ -135,83 +47,6 @@
   <!-- NAVBAR -->
 
   <!-- Hero Section -->
-  <style>
-    .real {
-      width: 90%;
-      margin: auto;
-      float: right;
-    }
-
-    .side-text {
-      display: none;
-    }
-
-    .side-photo {
-      display: none;
-    }
-
-    @media screen and (max-width:767px) {
-      .topnav {
-        width: 100%;
-      }
-
-      .real {
-        display: none;
-      }
-
-      .side-text {
-        position: relative;
-        display: block;
-        margin: auto;
-        padding-top: 80px;
-        padding-left: 10px;
-        width: 100%;
-        /* padding-right: 20%; */
-      }
-
-      .icon {
-        float: right;
-        margin-right: 0px;
-      }
-
-      .side-photo {
-        margin: auto;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        margin-left: 5%;
-        margin-right: 5%;
-        display: block;
-        height: 120%;
-        width: 90%;
-        float: right;
-
-      }
-
-      .mobile {
-        background-color: #F7A0A4;
-        height: fit-content;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        width: 75%;
-      }
-
-      .hero {
-        width: 100%;
-        margin: auto;
-        height: fit-content;
-      }
-    }
-
-    @media screen and (max-width:450px) {
-      .side-photo {
-        margin: auto;
-        margin-top: 50px;
-        width: 96%;
-        padding-right: 4%;
-
-      }
-    }
-  </style>
   <div class="hero">
     <img class="real" src="Real.png">
     <div class="mobile">
@@ -222,86 +57,6 @@
 
 
   <!-- Tiles -->
-  <style>
-    .btn {
-      padding: 15px, 17px;
-      color: black;
-      background-color: #F5C1A9;
-      font-family: 'Sniglet';
-      font-size: 35px;
-      height: 120px;
-      margin-left: 10px;
-      margin-right: 10px;
-      box-shadow: 3px 4px #888888;
-
-    }
-
-    .container {
-      position: static;
-      width: 100%;
-      max-width: 5000px;
-      margin: auto;
-    }
-
-    .firstbtn {
-      margin: auto;
-      width: 70%;
-      max-width: 600px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .secondbtn {
-      margin: auto;
-      width: 70%;
-      max-width: 600px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .firstbtn:hover,
-    .secondbtn:hover {
-      transform: scale(1.01);
-    }
-
-
-    #chooseyear {
-      text-align: center;
-      margin: auto;
-      font-family: "Merriweather";
-      font-size: 60px;
-    }
-
-    #thick {
-      height: 2px;
-      width: 100%;
-      border-width: 0;
-      color: gray;
-      background-color: gray;
-    }
-
-    @media screen and (max-width: 767px) {
-      .container {
-        margin-top: 450px;
-        margin-right: 0px;
-      }
-
-      #thick {
-        height: 2px;
-        border-width: 0;
-        color: gray;
-        background-color: gray;
-      }
-    }
-
-    .changes {
-      width: 100%;
-    }
-
-    .changes:hover {
-      cursor: pointer;
-    }
-  </style>
   <div class="container row">
     <div class="row" style="width: 100%;margin-bottom: 30px;">
       <h2 id="chooseyear">Choose your year</h2>
@@ -324,7 +79,7 @@
       </button>
     </div>
     <hr id="thick" style="margin-top:10%;">
-    <img class="changes" src="Changes.png">on>
+    <img class="changes" src="Changes.png">
   </div>
 
 </body>
