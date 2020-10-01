@@ -243,3 +243,9 @@ body {
 .changes:hover {
   cursor: pointer;
 }
+.container-fluid .row{
+    width: 100%;
+}
+#thick{
+    margin-top: 10%;
+}
